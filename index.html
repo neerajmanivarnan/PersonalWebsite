@@ -23,7 +23,12 @@
             
         }
 
-        .navbar{
+        nav{
+            display: flexbox;
+            justify-content: center;
+        }
+
+        .navbar nav .nav-link{
             background-color: rgb(44, 43, 43);
             font-family: 'Anton', sans-serif;
             
@@ -136,7 +141,7 @@
         /* Media Query for sidebar visibility */
         @media (max-width: 768px) {
             .sidebar {
-                display: block;
+                display: flexbox;
             }
 
             .open-btn {
@@ -159,14 +164,10 @@
 <body>
 
     <!-- Header Section -->
-    <div class="header">
-        <h5></h5>
-        <h1 class="display-4"> Neeraj Manivarnan</h1>
-        
-    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <a class="navbar-brand" href="#">Neeraj</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -202,7 +203,7 @@
                     <img src="img.jpg" alt="Profile Image"
                         class="img-fluid rounded-circle mx-auto d-block mb-4" style="width: 100px; height: 100px;">
                     <h2 class="section-title display-4">About Me</h2>
-                    <p class="about-text">B.Tech student pursuing a degree in Computer Science and Engineering at TKM
+                    <p class="about-text">Hii,I'm Neeraj Manivarnan <br>B.Tech student pursuing a degree in Computer Science and Engineering at TKM
                         College of Engineering. Interested fields are data structures and algorithms, and backend
                         development. Also interested in Open Source development</p>
                 </div>
@@ -236,6 +237,16 @@
                 <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%; background-color: #12404A" aria-label="Java Skill"></div>
             </div>
         </li>
+
+        <!-- Java Skill -->
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            SpringBoot
+            <div class="progress" style="width: 50%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%; background-color: #12404A" aria-label="Java Skill"></div>
+            </div>
+        </li>
+
+       
 
         <!-- Data Structures and Algorithms Skill -->
         <li class="list-group-item d-flex justify-content-between align-items-center">
